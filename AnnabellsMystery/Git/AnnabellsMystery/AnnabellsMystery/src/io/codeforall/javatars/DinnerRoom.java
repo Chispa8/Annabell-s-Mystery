@@ -14,13 +14,12 @@ public class DinnerRoom implements Investigate{
     private final Prompt prompt;
  //   private final Bathroom bathroom = new Bathroom();
 
-    private final Kitchen kitchen;
+    private final Kitchen kitchen = new Kitchen();
 
 
     public DinnerRoom(PrintWriter printWriter, Socket clientSocket) throws IOException {
         this.printWriter = printWriter;
         this.prompt = new Prompt(clientSocket.getInputStream(), new PrintStream(clientSocket.getOutputStream()));
-        this.kitchen = new Kitchen(printWriter, clientSocket);
     }
 
     @Override

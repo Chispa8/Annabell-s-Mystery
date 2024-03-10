@@ -24,7 +24,8 @@ public class LivingRoom implements Investigate {
     private void init() {
         Graphics.graphicLivingRoom();
         Graphics.graphicLivingRoomTitle();
-
+        //printMessage(Messages.LIVING_ROOM_INVESTIGATION_MESSAGE);
+        //printMessage(Messages.LIVING_ROOM_INTRODUCTION);
     }
 
     @Override
@@ -34,10 +35,6 @@ public class LivingRoom implements Investigate {
 
         while (keepChoosing) {
 
-            printMessage(Graphics.ANSI_PURPLE + Graphics.graphicLivingRoom() + Graphics.ANSI_RESET);
-            printMessage(Graphics.ANSI_PURPLE + Graphics.graphicLivingRoomTitle() + Graphics.ANSI_RESET);
-            printMessage(Messages.LIVING_ROOM_INTRODUCTION);
-            printMessage(Messages.LIVING_ROOM_INVESTIGATION_MESSAGE);
             String[] options = (!hasDagger) ?
                     new String[]{Messages.LETTER, Messages.DAGGER, Messages.KEYS} :
                     new String[]{Messages.LETTER, Messages.KEYS};

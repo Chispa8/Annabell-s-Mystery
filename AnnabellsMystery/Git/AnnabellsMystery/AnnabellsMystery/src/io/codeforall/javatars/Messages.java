@@ -13,17 +13,16 @@ public class Messages {
             "none of them will ever forget..";
     protected static final String HOUSE_ASK_NAME = "What is your name?\n";
     protected static final String HOUSE_ENTRY_MESSAGE = "As you enter the house to the sound of your own name, the atmosphere of the Christmas dinner \n" +
-            " is tinged with a sinister feeling that something else is lurking in the shadows. \n";
+            " is tinged with a sinister feeling that something else is lurking in the shadows.";
     protected static final String WINE = "The glass of wine had a ruby hue and texture reminiscent of blood. The intense aroma evokes mysteries and secrets, \n" +
-            " leaving him intrigued and cautious in the face of the sinister appearance of the wine. \n";
+            " leaving him intrigued and cautious in the face of the sinister appearance of the wine.";
 
-    public static final String HOUSE_STORY = "Everyone gathers around a large table looking forward to Annabela's famous cod \n" +
+    public static final String HOUSE_STORY = "Story - Everyone gathers around a large table looking forward to Annabela's famous cod \n" +
             "Between joy and laughter, tension can be seen between some guests \n" +
             "Despite everything, dinner goes beautifully and everyone retires to their rooms.";
     public static final String HOUSE_WAKEUP = "After a peaceful Christmas dinner, is suddenly awakened by the disturbing news that their aunt Annabell has \n" +
             "been murdered. The festive atmosphere gives way to a tense and somber mood as the guests try to comprehend what has happened.\n" +
             " The player finds themselves engulfed in mystery and suspicion, aware that they will have to unravel dark secrets and face imminent dangers..";
-
 
     /**
      * LivingRoom messages
@@ -36,6 +35,14 @@ public class Messages {
     protected static final String LETTER = "Read the leter";
     protected static final String DAGGER = "Take the dagger";
     protected static final String KEYS = "Take the Keys";
+
+    protected static final String KEYS_DESCRIPTION = "As I examine the key, I recognize it. She always carries this old key, and I suspect it belongs to a mysterious chest in the game room.";
+    protected static final String DAGGER_MESSAGE = "A chilling sensation runs down my spine as I hold the dagger. It feels like I've awakened something dormant, something that was waiting for this moment to emerge.";
+    protected static final String DAGGAR_MESSAGE2 = "I'll keep it for later, I might need it.";
+
+
+    protected static final String SELECTION = "Which one should I choose?";
+
     protected static final String LETTER_MESSAGE = "Dear Anabela,\n" +
             "\n" +
             "It has been a pleasure and a rollercoaster of laughter sharing these moments with you. Who would have thought our voices would meet on the radio, right?\n" +
@@ -45,30 +52,26 @@ public class Messages {
             "Until the next tune, Anabela!\n" +
             "\n" +
             "With affection and a guaranteed smile,";
-    protected static final String KEYS_DESCRIPTION = "As I examine the key, I recognize it. She always carries this old key, and I suspect it belongs to a mysterious chest in the game room.";
-    protected static final String DAGGER_MESSAGE = "A chilling sensation runs down my spine as I hold the dagger. It feels like I've awakened something dormant, something that was waiting for this moment to emerge.";
-    protected static final String DAGGAR_MESSAGE2 = "I'll keep it for later, I might need it.";
-
-
-    /**
-     * Pool messages
-     */
-
     public static final String POOL_INTRODUCTION = "While arriving at the pool, you see a body floating in the water!";
     public static final String POOL_INVESTIGATION_MESSAGE = "Going to the pool... ";
-    protected static final String CALLING_THE_COPS = "With no signal, desperately tries to make an emergency call upon finding Annabella dead in the pool. Her cellphone remains silent, \n" +
-            " leaving her alone facing the dark mystery unfolding before her. Determined, she confronts the situation, ready to uncover the truth on her own.";
-    protected static final String WAKE_UP_EVERYBODY = "Waking everyone up may not be the wisest decision at this moment. The darkness of the night shrouds the identity of the killer, \n " +
+    public static final String POOL_OPTIONS = "what should I do?";
 
-            "casting doubts on the safety of each one of us in this house. A silent fear envelops my heart as I contemplate the consequences of disturbing the peace, uncertain of who lurks in the shadows.";
     public static final String POOL_INVESTIGATION_BODY = "I approach the body and realize that it's Annabell's ";
-    public static final String POOL_INVESTIGATION_LOOKAROUND = "I start to look around, and some items caught my attention," +
+    public static final String POOL_INVESTIGATION_LOOKAROUND = "I start to look around, and some items caught my attention,\n" +
             " a sand bag tied to the body, a necklace on the floor,\n" +
             " a watch near the window and a cell phone by the door";
     public static final String POOL_INVESTIGATION_LOCATION = "This clue must take me somewhere, but where?";
-
-
-    protected static final String SELECTION = "Which one should I choose?";
+    public static final String POOL_CALL_COPS = "Call the cops";
+    public static final String POOL_WAKEUP_EVERYBODY = "Wake up everybody";
+    public static final String POOL_INVESTIGATE_BODY = "Investigate the body";
+    public static final String POOL_SAND_BAG = "Sand bag";
+    public static final String POOL_ANABELLS_NECKLACE = "Annabell's necklace";
+    public static final String POOL_WATCH = "A watch";
+    public static final String POOL_CELL_PHONE = "Cell Phone";
+    public static final String POOL_CHOICES_MESSAGE = "Choose an option:";
+    public static final String POOL_LOOK_AROUND_MESSAGE = "Look around and choose an item:";
+    public static final String POOL_CLUE_LOCATION = "This clue must take me somewhere, but where?";
+    public static final String POOL_CLUE_MESSAGE = "Choose a location to investigate:";
     public static final String KITCHEN_INVESTIGATION = "Arrived at the kitchen, and I can see that the lights are off, so, I turn them on. \n" +
             "In that moment I look to the balance and saw something weird. \n" +
             "The balance is not on 0, but there is nothing on it \n" +
@@ -203,12 +206,25 @@ public class Messages {
     public static final String GARDEN_INVESTIGATION_MESSAGE = "It's Christmas time but, I don't feel nothing right now after all the things I just saw...";
     public static final String GARDEN_INTRODUCTION_MESSAGE = "It's raining so much but, I can see some stuff on the ground, \n " +
             "near to the oak where Annabell usually heard her favourite radio station";
+    public static final String GARDEN_BOOK = "Little book";
+    public static final String GARDEN_LEASH = "Leash from an animal";
+    public static final String GARDEN_SHOE = "Blue shoe";
     public static final String GARDEN_NOTE = "Inside of this book there is a dirty paper with 1s and 0s on it. What does it mean? \n" +
             "Should I throw to the garbage or maybe trying to translate it?";
-    public static final String GARDEN_BINARY_NUMBER = "01100100 01101111 01101110 01100000 01110100 00100000 01100111 01101111 00100000 01110100 01101111 00100000 01110100 01101000 01100101 00100000 01101100 01101001 01100010 01110010 01100001 01110010 01111001";
-    protected static final String LEASH = "This leash can be useful for Ricardo's dogs";
-    protected static final String BLUE_SHOE = "This shoe can be useful for my friend Pedro, who when playing soccer seems like he only has one leg.";
+    public static final String GARDEN_ANSWER = "Throw away";
+    public static final String GARDEN_ANSWER_2 = "Try to translate";
+    public static final String GARDEN_BINARY_NUMBER = "MOBILE PHONE: 01100100 01101111 01101110 01100000 01110100 00100000 01100111 \n" +
+            " 01101111 00100000 01110100 01101111 00100000 01110100 01101000 01100101\n" +
+            " 00100000 01101100 01101001 01100010 01110010 01100001 01110010 01111001\n" +
+            " MOBILE PHONE ANSWER: Don't go to the library";
+    public static final String GARDEN_INVESTIGATION_LOCATION = "Would I be very stupid if I check something out in the library?";
+    public static final String LIBRARY = "Check the library";
+    public static final String SUITE = "Go to Annabell's suite";
+    public static final String GARDEN_CHOICES_MESSAGE = "There must be something that I can use to solve this fucking mystery...";
+
+
 
     protected static final String LIVING_ROOM_CHOISE = "What would you like to do?";
     protected static final String LIVING_ROOM_CHOISE2 = "You made a good choice";
 }
+

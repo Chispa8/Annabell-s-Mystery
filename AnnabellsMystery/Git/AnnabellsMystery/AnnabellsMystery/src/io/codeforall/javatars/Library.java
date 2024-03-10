@@ -22,15 +22,15 @@ public class Library implements Investigate{
 
     @Override
     public void investigate() {
-        printMessage(Graphics.ANSI_YELLOW + Graphics.graphicLibrary() + Graphics.ANSI_RESET);
-        printMessage(Graphics.ANSI_YELLOW + Graphics.graphicLibraryTitle() + Graphics.ANSI_RESET);
+        Graphics.graphicLibrary();
+        Graphics.graphicLibraryTitle();
         printMessage(Messages.LIBRARY_INVESTIGATION_MESSAGE);
 
         printMessage(Messages.LIBRARY_INTRODUCTION_MESSAGE);
 
         String[] options = {Messages.LIBRARY_KEY, Messages.LIBRARY_PHOTO, Messages.LIBRARY_RUBBIK};
         MenuInputScanner story = new MenuInputScanner(options);
-        story.setMessage("choose");
+        story.setMessage(Messages.POOL_OPTIONS);
         int answer = prompt.getUserInput(story);
 
         if (answer == 2) {

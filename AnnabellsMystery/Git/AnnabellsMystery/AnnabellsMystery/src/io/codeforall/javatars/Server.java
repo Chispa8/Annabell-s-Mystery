@@ -14,6 +14,7 @@ public class Server {
 
     public void start() {
 
+        //Graphics.mainTitle();
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Server started on port " + PORT);
@@ -36,7 +37,7 @@ public class Server {
                 clientThread.start();
             }
         } catch (IOException e) {
-            System.out.println("Error to start" + e);;
+            e.printStackTrace();
         }
     }
 
@@ -55,8 +56,16 @@ public class Server {
                 this.writer = new PrintWriter(clientSocket.getOutputStream(), true);
                 clients.put(clientSocket, writer);
 
+                sendMessage(Graphics.ANSI_CYAN + " __      __            _                                        _____                                                              \n" +
+                        " \\ \\    / /    ___    | |    __     ___     _ __      ___      |_   _|    ___                                                      \n" +
+                        "  \\ \\/\\/ /    / -_)   | |   / _|   / _ \\   | '  \\    / -_)       | |     / _ \\                                                     \n" +
+                        "   \\_/\\_/     \\___|   |_|   \\__|   \\___/   |_|_|_|   \\___|  _    |_|     \\___/ __                     _                            \n" +
+                        "   /_\\      _ _      _ _      __ _    | |__   ___    | |   | |    ___     |  \\/  |    _  _     ___   | |_     ___     _ _     _  _ \n" +
+                        "  / _ \\    | ' \\    | ' \\    / _` |   | '_ \\ / -_)   | |   | |   (_-<     | |\\/| |   | || |   (_-<   |  _|   / -_)   | '_|   | || |\n" +
+                        " /_/ \\_\\   |_||_|   |_||_|   \\__,_|   |_.__/ \\___|   |_|   |_|   /__/     |_|  |_|    \\_, |   /__/    \\__|   \\___|   |_|      \\_, |\n" +
+                        "                                                                                      |__/                                    |__/ " + Graphics.ANSI_RESET);
             } catch (IOException e) {
-                throw new RuntimeException("Error getting output stream", e);
+                throw new RuntimeException("Error getting output stream" + e);
             }
         }
 
@@ -66,7 +75,7 @@ public class Server {
                 AnnabellsHouse annabellsHouse = new AnnabellsHouse(clientSocket, clients);
                 annabellsHouse.start();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("Error in Annabel's run method" + e);;
             } finally {
                 clients.remove(clientSocket);
                 closeConnectionIfPoliceCalled();

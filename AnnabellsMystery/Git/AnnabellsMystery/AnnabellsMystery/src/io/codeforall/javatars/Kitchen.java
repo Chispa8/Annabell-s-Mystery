@@ -4,16 +4,12 @@ import org.academiadecodigo.bootcamp.Prompt;
 import org.academiadecodigo.bootcamp.scanners.string.StringInputScanner;
 
 import java.io.PrintWriter;
-import java.net.Socket;
 
 public class Kitchen implements Investigate {
 
     private final PrintWriter printWriter = new PrintWriter(System.out, true);
     private final Prompt prompt = new Prompt(System.in, System.out);
 
-    public Kitchen(PrintWriter printWriter, Socket clientSocket){
-
-    }
     @Override
     public void investigate() {
         Graphics.graphicKitchenTitle();
